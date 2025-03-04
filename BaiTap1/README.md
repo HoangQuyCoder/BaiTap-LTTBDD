@@ -34,4 +34,4 @@
 - Hàm Text: Text là một composable hiển thị văn bản.
 
 # 4. Kết quả đạt được:
-<img width="212" alt="ProfileUI" src="https://github.com/user-attachments/assets/0299a1f4-1f82-463e-b8fe-5d6912775386" />
+<img width="221" alt="ProfileUI" src="https://github.com/user-attachments/assets/f756428d-62c8-4506-8008-c2f7fbbf9e18" />
