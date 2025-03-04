@@ -7,14 +7,17 @@
 **Trong tương lai gần, lập trình di động sẽ tiếp tục là một lĩnh vực phát triển mạnh mẽ và đầy tiềm năng. Vì:**
 - Sự phổ biến của thiết bị di động:
 	+ Điện thoại thông minh và máy tính bảng đã trở thành một phần không thể thiếu trong cuộc sống hàng ngày.
+
 	+ Số lượng người dùng thiết bị di động tiếp tục tăng trưởng, đặc biệt là ở các thị trường mới nổi.
 
 - Sự phát triển của công nghệ:
 	+ Trí tuệ nhân tạo (AI) và máy học (ML) đang được tích hợp vào các ứng dụng di động để cung cấp các tính năng thông minh hơn và cá nhân hóa hơn.
+
 	+ Internet vạn vật (IoT) kết nối các thiết bị thông minh với nhau, tạo ra nhu cầu cho các ứng dụng di động để điều khiển và quản lý các thiết bị này.
 
 - Nhu cầu ngày càng tăng về ứng dụng di động:
 	+ Các doanh nghiệp đang chuyển sang ứng dụng di động để tiếp cận khách hàng và cung cấp dịch vụ.
+
 	+ Các lĩnh vực như y tế, giáo dục, tài chính và giải trí đang ngày càng phụ thuộc vào ứng dụng di động.
 
 # 3. Mô tả ngắn gọn các hàm được sử dụng:
