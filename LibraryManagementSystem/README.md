@@ -1,5 +1,5 @@
 # Hệ thống quản lí thư viện
-** Các chức năng cơ bản:
+*** Các chức năng cơ bản:
   - Tạo danh sách sách
   - Tạo danh sách người dùng
   - Cho phép người dùng mượn sách và hiện thị thông tin sách
