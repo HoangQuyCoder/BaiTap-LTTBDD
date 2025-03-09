@@ -15,3 +15,6 @@
   + Kiểm tra xem dữ liệu nhập vào có hợp lệ không.
   + Xác định nhóm tuổi
   + Hiển thị kết quả bằng Toast.
+
+# Kết quả đạt được
+<img width="323" alt="Screenshot 2025-03-09 162843" src="https://github.com/user-attachments/assets/1984daa3-0f58-4c62-a657-688ba5c27add" />
