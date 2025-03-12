@@ -16,94 +16,12 @@
         android:textSize="20sp"
         android:textStyle="bold" />
 
-    <LinearLayout
+    <!-- Nơi chứa Fragment -->
+    <FrameLayout
+        android:id="@+id/fragment_container"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"
-        android:orientation="vertical"
-        android:padding="16dp">
-
-        <!-- Nhân Viên -->
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:text="Nhân Viên"
-            android:textColor="@color/black"
-            android:textSize="18sp"
-
-            android:textStyle="bold" />
-
-        <!-- Ô nhập tên nhân viên + Nút đổi -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <TextView
-                android:id="@+id/etEmployeeName"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="@drawable/text_border"
-                android:padding="10dp"
-                android:text="Nguyen Van A"
-                android:textColor="@color/black"
-                android:textSize="18dp"
-                android:textStyle="bold" />
-
-            <Button
-                android:id="@+id/btnChange"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="20sp"
-                android:background="@drawable/button_background"
-                android:text="Đổi"
-                android:textColor="@color/white"
-                android:textStyle="bold" />
-        </LinearLayout>
-
-        <!-- Danh sách sách -->
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="10dp"
-            android:text="Danh sách sách"
-            android:textColor="@color/black"
-            android:textSize="18sp"
-            android:textStyle="bold" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/linear_border"
-            android:gravity="center_vertical"
-            android:orientation="vertical"
-            android:padding="12dp">
-
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/rvBooks"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:contentDescription="Danh sách sách"
-                android:focusable="false"
-
-                android:nestedScrollingEnabled="false" />
-        </LinearLayout>
-
-        <Button
-            android:id="@+id/btnAdd"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="20sp"
-            android:background="@drawable/button_background"
-            android:text="Thêm"
-            android:textColor="@android:color/white"
-            android:textStyle="bold" />
-
-    </LinearLayout>
+        android:layout_weight="1"/>
 
     <!-- Đường kẻ ngang -->
     <View
@@ -112,39 +30,12 @@
         android:background="@android:color/darker_gray" />
 
     <!-- Danh mục nằm ở dưới cùng -->
-    <LinearLayout
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:paddingTop="0dp"
-        android:paddingBottom="8dp">
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:text="Quản lý"
-            android:textColor="@color/blue"
-            app:drawableTopCompat="@drawable/ic_home" />
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:text="DS Sách"
-            android:textColor="@color/silver"
-            app:drawableTopCompat="@drawable/ic_list" />
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:text="Nhân viên"
-            android:textColor="@color/silver"
-            app:drawableTopCompat="@drawable/ic_employee" />
-    </LinearLayout>
+        android:background="@color/white"
+        app:menu="@menu/bottom_navigation_menu">
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
 
 </LinearLayout>
