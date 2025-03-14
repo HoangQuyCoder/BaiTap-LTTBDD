@@ -71,8 +71,7 @@ fun ProfileScreen() {
                             .size(40.dp)
                             .padding(end = 20.dp)
                             .border(1.dp, Color.Gray, shape = RoundedCornerShape(8.dp))
-                    )
-                    {
+                    ) {
                         Icon(
                             painter = painterResource(id = R.drawable.ic_edit),
                             contentDescription = "Edit"
@@ -107,7 +106,7 @@ fun ProfileScreen() {
 
             // Name
             Text(
-                    text = "Hoang Quy",
+                text = "Hoang Quy",
                 fontSize = 22.sp,
                 fontWeight = FontWeight.Bold,
                 color = Color.Black
