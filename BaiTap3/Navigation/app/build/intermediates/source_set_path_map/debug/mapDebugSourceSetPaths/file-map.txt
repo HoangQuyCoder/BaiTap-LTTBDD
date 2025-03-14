@@ -1,0 +1,57 @@
+com.example.navigationapplication.app-material-release-0 C:\Users\HOANG QUY\.gradle\caches\8.11.1\transforms\02580de4bce58296bb56a3ed1a7dbccc\transformed\material-release\res
+com.example.navigationapplication.app-lifecycle-viewmodel-compose-release-1 C:\Users\HOANG QUY\.gradle\caches\8.11.1\transforms\03e625e485ac28ebac067c2a72939084\transformed\lifecycle-viewmodel-compose-release\res
+com.example.navigationapplication.app-lifecycle-viewmodel-savedstate-2.8.7-2 C:\Users\HOANG QUY\.gradle\caches\8.11.1\transforms\0e454dfd5207ac3d6a2732b7970bccc5\transformed\lifecycle-viewmodel-savedstate-2.8.7\res
+com.example.navigationapplication.app-ui-text-release-3 C:\Users\HOANG QUY\.gradle\caches\8.11.1\transforms\0f36041805e6efdbbd9b3f53ca624eea\transformed\ui-text-release\res
+com.example.navigationapplication.app-ui-tooling-preview-release-4 C:\Users\HOANG QUY\.gradle\caches\8.11.1\transforms\126b89dc0b298efefd9cd615af4c00bc\transformed\ui-tooling-preview-release\res
+com.example.navigationapplication.app-core-ktx-1.15.0-5 C:\Users\HOANG QUY\.gradle\caches\8.11.1\transforms\1362d59f16539b30c480e54cb0668289\transformed\core-ktx-1.15.0\res
+com.example.navigationapplication.app-lifecycle-viewmodel-ktx-2.8.7-6 C:\Users\HOANG QUY\.gradle\caches\8.11.1\transforms\1920149e0a21a1b2dca983ba0fdfd4c2\transformed\lifecycle-viewmodel-ktx-2.8.7\res
+com.example.navigationapplication.app-foundation-layout-release-7 C:\Users\HOANG QUY\.gradle\caches\8.11.1\transforms\32eac3dae7a10ed9d21bb9bffc27bd3f\transformed\foundation-layout-release\res
+com.example.navigationapplication.app-material-ripple-release-8 C:\Users\HOANG QUY\.gradle\caches\8.11.1\transforms\33c2f10b7d2fbf09097de9558a3d073e\transformed\material-ripple-release\res
+com.example.navigationapplication.app-animation-release-9 C:\Users\HOANG QUY\.gradle\caches\8.11.1\transforms\33e4157a1aa22a8d198b10fd19941c0b\transformed\animation-release\res
+com.example.navigationapplication.app-savedstate-1.2.1-10 C:\Users\HOANG QUY\.gradle\caches\8.11.1\transforms\36ad0ba3d2467c74f03debc060c096f4\transformed\savedstate-1.2.1\res
+com.example.navigationapplication.app-lifecycle-runtime-compose-release-11 C:\Users\HOANG QUY\.gradle\caches\8.11.1\transforms\42e9d78ebd8bc852c2117375a197213c\transformed\lifecycle-runtime-compose-release\res
+com.example.navigationapplication.app-navigation-runtime-2.7.4-12 C:\Users\HOANG QUY\.gradle\caches\8.11.1\transforms\445bf9fe8074468f72769f5c435b1f09\transformed\navigation-runtime-2.7.4\res
+com.example.navigationapplication.app-material-icons-core-release-13 C:\Users\HOANG QUY\.gradle\caches\8.11.1\transforms\461d7704f845e9e17d2afc25ec8b4ea1\transformed\material-icons-core-release\res
+com.example.navigationapplication.app-lifecycle-runtime-ktx-release-14 C:\Users\HOANG QUY\.gradle\caches\8.11.1\transforms\48e3ae809a9cb632f93c498bbe2d5382\transformed\lifecycle-runtime-ktx-release\res
+com.example.navigationapplication.app-ui-graphics-release-15 C:\Users\HOANG QUY\.gradle\caches\8.11.1\transforms\4dcc5cb54ead87bc90a8f99f635976de\transformed\ui-graphics-release\res
+com.example.navigationapplication.app-savedstate-ktx-1.2.1-16 C:\Users\HOANG QUY\.gradle\caches\8.11.1\transforms\4e7cda2cf17fe10f9b0193934a40f533\transformed\savedstate-ktx-1.2.1\res
+com.example.navigationapplication.app-ui-tooling-release-17 C:\Users\HOANG QUY\.gradle\caches\8.11.1\transforms\55ed412bba6a3091446db406058d15fa\transformed\ui-tooling-release\res
+com.example.navigationapplication.app-navigation-common-ktx-2.7.4-18 C:\Users\HOANG QUY\.gradle\caches\8.11.1\transforms\5945cc6e466efc7e961a539a74a4a5a2\transformed\navigation-common-ktx-2.7.4\res
+com.example.navigationapplication.app-animation-core-release-19 C:\Users\HOANG QUY\.gradle\caches\8.11.1\transforms\59de6e84453b2bd74d00c7c54c3fea60\transformed\animation-core-release\res
+com.example.navigationapplication.app-customview-poolingcontainer-1.0.0-20 C:\Users\HOANG QUY\.gradle\caches\8.11.1\transforms\5ca000565c1ffaa379e3e10ddd762a25\transformed\customview-poolingcontainer-1.0.0\res
+com.example.navigationapplication.app-runtime-release-21 C:\Users\HOANG QUY\.gradle\caches\8.11.1\transforms\65b277c604617ba08313b1a07b3b2a4a\transformed\runtime-release\res
+com.example.navigationapplication.app-tracing-1.2.0-22 C:\Users\HOANG QUY\.gradle\caches\8.11.1\transforms\6f52661b77174f4c69bd5bb3bb38ed38\transformed\tracing-1.2.0\res
+com.example.navigationapplication.app-activity-1.10.1-23 C:\Users\HOANG QUY\.gradle\caches\8.11.1\transforms\789a0f8f3d78a75b98131a75d51ca263\transformed\activity-1.10.1\res
+com.example.navigationapplication.app-lifecycle-process-2.8.7-24 C:\Users\HOANG QUY\.gradle\caches\8.11.1\transforms\7d39375df751ad297181de36a32e86bc\transformed\lifecycle-process-2.8.7\res
+com.example.navigationapplication.app-navigation-common-2.7.4-25 C:\Users\HOANG QUY\.gradle\caches\8.11.1\transforms\81c203add1f64c6f97562260cd417bb6\transformed\navigation-common-2.7.4\res
+com.example.navigationapplication.app-ui-unit-release-26 C:\Users\HOANG QUY\.gradle\caches\8.11.1\transforms\8846b7883078a30df111024e1bb2929c\transformed\ui-unit-release\res
+com.example.navigationapplication.app-ui-release-27 C:\Users\HOANG QUY\.gradle\caches\8.11.1\transforms\8a7b5a4deee75c55a0f4b0a162ec5c5e\transformed\ui-release\res
+com.example.navigationapplication.app-navigation-runtime-ktx-2.7.4-28 C:\Users\HOANG QUY\.gradle\caches\8.11.1\transforms\9273f272c0ba803ff156d1c0930b3e48\transformed\navigation-runtime-ktx-2.7.4\res
+com.example.navigationapplication.app-core-runtime-2.2.0-29 C:\Users\HOANG QUY\.gradle\caches\8.11.1\transforms\afb13daa5bfd8b47422272c21b20e9e8\transformed\core-runtime-2.2.0\res
+com.example.navigationapplication.app-ui-test-manifest-1.7.8-30 C:\Users\HOANG QUY\.gradle\caches\8.11.1\transforms\b10bef2a8c65acbfdb526b6e7650cd46\transformed\ui-test-manifest-1.7.8\res
+com.example.navigationapplication.app-material3-release-31 C:\Users\HOANG QUY\.gradle\caches\8.11.1\transforms\b4590003856c0a3454361d2924173747\transformed\material3-release\res
+com.example.navigationapplication.app-ui-tooling-data-release-32 C:\Users\HOANG QUY\.gradle\caches\8.11.1\transforms\b4d0d6baa44ed9fd617aac13940196c2\transformed\ui-tooling-data-release\res
+com.example.navigationapplication.app-runtime-saveable-release-33 C:\Users\HOANG QUY\.gradle\caches\8.11.1\transforms\b50e3fd1e5417be13b94fb40f3baa985\transformed\runtime-saveable-release\res
+com.example.navigationapplication.app-navigation-compose-2.7.4-34 C:\Users\HOANG QUY\.gradle\caches\8.11.1\transforms\b8f0053f6038e45bf73ec9ef05da4f6f\transformed\navigation-compose-2.7.4\res
+com.example.navigationapplication.app-graphics-path-1.0.1-35 C:\Users\HOANG QUY\.gradle\caches\8.11.1\transforms\bb157848c98334d23cb0344667cbbbbd\transformed\graphics-path-1.0.1\res
+com.example.navigationapplication.app-core-viewtree-1.0.0-36 C:\Users\HOANG QUY\.gradle\caches\8.11.1\transforms\bdab0f501a1c930feccfc51488f32c7b\transformed\core-viewtree-1.0.0\res
+com.example.navigationapplication.app-activity-compose-1.10.1-37 C:\Users\HOANG QUY\.gradle\caches\8.11.1\transforms\c3e5a357e36487ec1594c4ad18fd0366\transformed\activity-compose-1.10.1\res
+com.example.navigationapplication.app-lifecycle-livedata-core-2.8.7-38 C:\Users\HOANG QUY\.gradle\caches\8.11.1\transforms\c7de72942544e379b4ffa507e974116f\transformed\lifecycle-livedata-core-2.8.7\res
+com.example.navigationapplication.app-core-1.15.0-39 C:\Users\HOANG QUY\.gradle\caches\8.11.1\transforms\cb041487ee8092aabf67f17fdc9f3d64\transformed\core-1.15.0\res
+com.example.navigationapplication.app-activity-ktx-1.10.1-40 C:\Users\HOANG QUY\.gradle\caches\8.11.1\transforms\cc9bfc132b45c167a581b5a8d58b36af\transformed\activity-ktx-1.10.1\res
+com.example.navigationapplication.app-annotation-experimental-1.4.1-41 C:\Users\HOANG QUY\.gradle\caches\8.11.1\transforms\cdcf9391d83520bbe3540ad80982cca6\transformed\annotation-experimental-1.4.1\res
+com.example.navigationapplication.app-ui-util-release-42 C:\Users\HOANG QUY\.gradle\caches\8.11.1\transforms\ce16c1fd039aa0a24595b430ef2124e2\transformed\ui-util-release\res
+com.example.navigationapplication.app-emoji2-1.3.0-43 C:\Users\HOANG QUY\.gradle\caches\8.11.1\transforms\d60b81d1a6f65ab6d643fa345030d61d\transformed\emoji2-1.3.0\res
+com.example.navigationapplication.app-ui-geometry-release-44 C:\Users\HOANG QUY\.gradle\caches\8.11.1\transforms\e51847657e02d47302a48eedc5ef0d03\transformed\ui-geometry-release\res
+com.example.navigationapplication.app-lifecycle-runtime-release-45 C:\Users\HOANG QUY\.gradle\caches\8.11.1\transforms\ec7215a245b5a7a4ecfae332165a6547\transformed\lifecycle-runtime-release\res
+com.example.navigationapplication.app-startup-runtime-1.1.1-46 C:\Users\HOANG QUY\.gradle\caches\8.11.1\transforms\f38fc5249074259054ac503ca5fb4719\transformed\startup-runtime-1.1.1\res
+com.example.navigationapplication.app-profileinstaller-1.4.0-47 C:\Users\HOANG QUY\.gradle\caches\8.11.1\transforms\f433cd5743f2b15c433b94fd0c039296\transformed\profileinstaller-1.4.0\res
+com.example.navigationapplication.app-lifecycle-viewmodel-release-48 C:\Users\HOANG QUY\.gradle\caches\8.11.1\transforms\f489163e58d0432a57c5a88546a8110e\transformed\lifecycle-viewmodel-release\res
+com.example.navigationapplication.app-foundation-release-49 C:\Users\HOANG QUY\.gradle\caches\8.11.1\transforms\ffb466045caa3d6b883c44302874df36\transformed\foundation-release\res
+com.example.navigationapplication.app-pngs-50 D:\Exercise-LTTBDD\BaiTap3\Navigation\app\build\generated\res\pngs\debug
+com.example.navigationapplication.app-resValues-51 D:\Exercise-LTTBDD\BaiTap3\Navigation\app\build\generated\res\resValues\debug
+com.example.navigationapplication.app-packageDebugResources-52 D:\Exercise-LTTBDD\BaiTap3\Navigation\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
+com.example.navigationapplication.app-packageDebugResources-53 D:\Exercise-LTTBDD\BaiTap3\Navigation\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
+com.example.navigationapplication.app-debug-54 D:\Exercise-LTTBDD\BaiTap3\Navigation\app\build\intermediates\merged_res\debug\mergeDebugResources
+com.example.navigationapplication.app-debug-55 D:\Exercise-LTTBDD\BaiTap3\Navigation\app\src\debug\res
+com.example.navigationapplication.app-main-56 D:\Exercise-LTTBDD\BaiTap3\Navigation\app\src\main\res
