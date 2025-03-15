@@ -4,7 +4,7 @@
             "outputFile": "com.example.navigationapplication.app-mergeDebugResources-52:/values-hu/values-hu.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\HOANG QUY\\.gradle\\caches\\8.11.1\\transforms\\b4590003856c0a3454361d2924173747\\transformed\\material3-release\\res\\values-hu\\values-hu.xml",
+                    "source": "C:\\Users\\HOANG QUY\\.gradle\\caches\\8.11.1\\transforms\\0ee2832ff3a93367e4555a1d71835f1a\\transformed\\material3-release\\res\\values-hu\\values-hu.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -21,24 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\HOANG QUY\\.gradle\\caches\\8.11.1\\transforms\\ffb466045caa3d6b883c44302874df36\\transformed\\foundation-release\\res\\values-hu\\values-hu.xml",
-                    "from": {
-                        "startLines": "2,3",
-                        "startColumns": "4,4",
-                        "startOffsets": "55,144",
-                        "endColumns": "88,96",
-                        "endOffsets": "139,236"
-                    },
-                    "to": {
-                        "startLines": "85,86",
-                        "startColumns": "4,4",
-                        "startOffsets": "8805,8894",
-                        "endColumns": "88,96",
-                        "endOffsets": "8889,8986"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\HOANG QUY\\.gradle\\caches\\8.11.1\\transforms\\cb041487ee8092aabf67f17fdc9f3d64\\transformed\\core-1.15.0\\res\\values-hu\\values-hu.xml",
+                    "source": "C:\\Users\\HOANG QUY\\.gradle\\caches\\8.11.1\\transforms\\a54ca07fcf4f83354ccf116b967dc485\\transformed\\core-1.15.0\\res\\values-hu\\values-hu.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",
@@ -55,7 +38,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\HOANG QUY\\.gradle\\caches\\8.11.1\\transforms\\8a7b5a4deee75c55a0f4b0a162ec5c5e\\transformed\\ui-release\\res\\values-hu\\values-hu.xml",
+                    "source": "C:\\Users\\HOANG QUY\\.gradle\\caches\\8.11.1\\transforms\\b53245dba92770cc290bbfbfb0607df0\\transformed\\ui-release\\res\\values-hu\\values-hu.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -69,6 +52,23 @@
                         "startOffsets": "827,922,1010,1107,1206,1293,1375,7801,7890,7977,8060,8148,8222,8297,8368,8539,8618,8684",
                         "endColumns": "94,87,96,98,86,81,95,88,86,82,87,73,74,70,69,78,65,120",
                         "endOffsets": "917,1005,1102,1201,1288,1370,1466,7885,7972,8055,8143,8217,8292,8363,8433,8613,8679,8800"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\HOANG QUY\\.gradle\\caches\\8.11.1\\transforms\\89ce5f1d97445893c25f0d7b7272f406\\transformed\\foundation-release\\res\\values-hu\\values-hu.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,144",
+                        "endColumns": "88,96",
+                        "endOffsets": "139,236"
+                    },
+                    "to": {
+                        "startLines": "85,86",
+                        "startColumns": "4,4",
+                        "startOffsets": "8805,8894",
+                        "endColumns": "88,96",
+                        "endOffsets": "8889,8986"
                     }
                 }
             ]
