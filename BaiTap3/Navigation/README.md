@@ -7,6 +7,6 @@
   - Divider kẻ đường line đơn giản
 
 # Giao diện
-<img width="200"  alt="Screenshot_20250315_230245" src ="https://github.com/user-attachments/assets/0fd4c27c-4f74-4959-b5ba-1acb9db016ff">
-<img width="200"  alt="Screenshot_20250315_225919" src ="https://github.com/user-attachments/assets/72b42f6b-867f-405e-ac4e-9b15e688f528">
-<img width="200"  alt="Screenshot_20250315_225909" src ="https://github.com/user-attachments/assets/3b4ebb35-cf57-4881-8c6e-dbc53c20d5ed">
+<img width="200"  alt="Screenshot_20250315_225737" src ="https://github.com/user-attachments/assets/f62826d7-c917-4159-abea-a106f25b4aff">
+<img width="200"  alt="Screenshot_20250315_225748" src ="https://github.com/user-attachments/assets/cd6665b8-e58f-4a1e-bad6-9356e3567f42">
+<img width="200"  alt="Screenshot_20250315_225708" src ="https://github.com/user-attachments/assets/55b2c300-fae0-4a6a-b4bc-4af5cc99ec2a">
