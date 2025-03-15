@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/white"
@@ -46,9 +47,12 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
+                android:autofillHints="Ho va ten"
                 android:background="@drawable/edittext_border"
+                android:inputType="textPersonName"
                 android:minHeight="48dp"
-                android:padding="12dp" />
+                android:padding="12dp"
+                tools:ignore="LabelFor" />
 
         </LinearLayout>
 
@@ -72,9 +76,12 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
+                android:autofillHints="Tuoi"
                 android:background="@drawable/edittext_border"
+                android:inputType="number"
                 android:minHeight="48dp"
-                android:padding="12dp" />
+                android:padding="12dp"
+                tools:ignore="LabelFor" />
         </LinearLayout>
 
     </LinearLayout>
