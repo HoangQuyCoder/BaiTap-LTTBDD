@@ -349,7 +349,7 @@ fun ThirdIntroduction(navController: NavController) {
                             .size(12.dp)
                             .clip(CircleShape)
                             .background(
-                                if (index == 1) Color(0xFF006EE9) else Color(0xFFEEF5FD)
+                                if (index == 2) Color(0xFF006EE9) else Color(0xFFEEF5FD)
                             ),
                     )
                 }
