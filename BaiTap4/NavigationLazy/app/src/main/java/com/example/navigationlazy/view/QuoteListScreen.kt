@@ -16,6 +16,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
+import androidx.compose.foundation.lazy.itemsIndexed
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
@@ -87,8 +88,8 @@ fun QuoteListScreen(navController: NavController) {
 
         // Danh sách
         LazyColumn {
-            items(listItems) { quote ->
-                QuoteItem(quote, onClick = {
+            itemsIndexed(listItems) { index,quote ->
+                QuoteItem(index, quote, onClick = {
                     navController.navigate("detail/${quote}")
                 })
             }
@@ -97,7 +98,7 @@ fun QuoteListScreen(navController: NavController) {
 }
 
 @Composable
-fun QuoteItem(quote: String, onClick: () -> Unit) {
+fun QuoteItem(index: Int, quote: String, onClick: () -> Unit) {
     Card(
         modifier = Modifier
             .fillMaxWidth()
@@ -119,7 +120,7 @@ fun QuoteItem(quote: String, onClick: () -> Unit) {
             horizontalArrangement = Arrangement.SpaceBetween
         ) {
             Text(
-                text = quote,
+                text = "$index | $quote",
                 fontSize = 16.sp,
                 modifier = Modifier.weight(1f)
             )
