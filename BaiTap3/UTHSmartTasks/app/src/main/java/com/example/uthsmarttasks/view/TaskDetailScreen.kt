@@ -282,6 +282,7 @@ fun SubtaskItem(subtask: Subtask) {
 fun AttachmentItem(attachment: Attachment) {
     val context = LocalContext.current
     Row(
+        verticalAlignment = Alignment.CenterVertically,
         modifier = Modifier
             .background(
                 color = Color(0xFFE6E6E6),
