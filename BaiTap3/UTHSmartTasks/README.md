@@ -1,7 +1,6 @@
 # Ứng dụng UTH Smart Task
 
 - Chức năng
-
   - Khả năng điều hướng cơ bản giữa các màn hình
   - Thiết kế các màn hình hướng dẫn với các nút điều hướng, khả năng skip để đi đến trực tiếp màn hình chính
   - BottomNavBar giúp điều khiển giữa các màn hình khác nhau, FloatingActionButton hiển thị icon nổi lên
@@ -45,3 +44,7 @@
 <img width="200" alt="Screenshot_20250315_225856" src="https://github.com/user-attachments/assets/6cefaf85-9eb3-461a-b86f-4bd9472525ed" />
 <img width="200" alt="Screenshot_20250315_225909" src="https://github.com/user-attachments/assets/fe325f29-6d63-412f-9da8-ce33eeaf4c42" />
 <img width="200" alt="Screenshot_20250315_225919" src="https://github.com/user-attachments/assets/a9c03213-bb84-4d74-92fc-355b815437f4" />
+![Screenshot_20250325_215411](https://github.com/user-attachments/assets/647888b7-b106-4ca3-95ac-edec852df46b)
+![Screenshot_20250325_215644](https://github.com/user-attachments/assets/24767492-3a61-488b-80af-babc56e68ba6)
+![Screenshot_20250325_215434](https://github.com/user-attachments/assets/7faff27d-e4a1-4aa9-be61-acb96787322b)
+
