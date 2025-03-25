@@ -11,6 +11,9 @@ Ngôn ngữ: Kotlin
 Giao diện: Jetpack Compose
 Điều hướng: androidx.navigation.compose
 Material Design 3: androidx.compose.material3
-![Screenshot_20250325_220848](https://github.com/user-attachments/assets/bb1d4560-5a50-4753-ab12-e4499128e1e1)
-![Screenshot_20250325_220856](https://github.com/user-attachments/assets/1f954860-313b-435c-acd2-2c63cbf2a638)
-![Screenshot_20250325_220821](https://github.com/user-attachments/assets/7146ed07-3a7b-416e-8969-6172e249122d)
+
+## Giao diện
+<img width="200" alt="Screenshot_20250325_220821" src="https://github.com/user-attachments/assets/7146ed07-3a7b-416e-8969-6172e249122d" />
+<img width="200" alt="Screenshot_20250325_220856" src="https://github.com/user-attachments/assets/1f954860-313b-435c-acd2-2c63cbf2a638" />
+<img width="200" alt="Screenshot_20250325_220848" src="https://github.com/user-attachments/assets/bb1d4560-5a50-4753-ab12-e4499128e1e1" />
+
