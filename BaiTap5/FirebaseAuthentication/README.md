@@ -25,3 +25,9 @@
 - Firebase Authentication: Dịch vụ xác thực để đăng nhập bằng tài khoản Google.
 
 - Google Sign-In API: Hỗ trợ đăng nhập thông qua tài khoản Google.
+
+## Giao diện
+![Screenshot_20250328_212824](https://github.com/user-attachments/assets/1f441f8d-4c1a-400e-b56c-51349552fa87)
+![Screenshot_20250328_212854](https://github.com/user-attachments/assets/dcdc44db-69df-4cac-b973-1487e88e8b54)
+
+
