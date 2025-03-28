@@ -27,7 +27,6 @@
 - Google Sign-In API: Hỗ trợ đăng nhập thông qua tài khoản Google.
 
 ## Giao diện
-![Screenshot_20250328_212824](https://github.com/user-attachments/assets/1f441f8d-4c1a-400e-b56c-51349552fa87)
-![Screenshot_20250328_212854](https://github.com/user-attachments/assets/dcdc44db-69df-4cac-b973-1487e88e8b54)
-
-
+<img width="200" alt="login" src="https://github.com/user-attachments/assets/1f441f8d-4c1a-400e-b56c-51349552fa87" />
+<img width="200" alt="success" src="https://github.com/user-attachments/assets/dcdc44db-69df-4cac-b973-1487e88e8b54" />
+<img width="200" alt="error" src="https://github.com/user-attachments/assets/769341dd-c99a-4ab2-8e71-98f320d7f61a" />
