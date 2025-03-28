@@ -56,15 +56,22 @@ UTH Smart Tasks là ứng dụng Android hỗ trợ quản lý nhiệm vụ cá 
 - Bật Google Sign-In trong Firebase Authentication.
 
 2. Thêm dependency vào build.gradle (Module: app)
-   implementation 'com.google.firebase:firebase-auth:latest_version'
-   implementation 'com.google.android.gms:play-services-auth:latest_version'
-   implementation 'com.squareup.retrofit2:retrofit:latest_version'
-   implementation 'androidx.navigation:navigation-compose:latest_version'
+   - implementation("com.google.firebase:firebase-auth-ktx:latest_version")
+   - implementation("com.google.android.gms:play-services-auth:latest_version")
+   - implementation("com.google.firebase:firebase-analytics")
+   - implementation(platform("com.google.firebase:firebase-bom:latest_version"))
+   - implementation("androidx.credentials:credentials:latest_version")
+   - implementation("androidx.credentials:credentials-play-services-auth:latest_version")
+   - implementation("com.google.android.libraries.identity.googleid:googleid:latest_version")
+     
+   - implementation("com.squareup.retrofit2:retrofit:latest_version")
+   - implementation("androidx.navigation:navigation-compose:latest_version")
+  
+   - implementation("io.coil-kt:coil-compose:latest_version")
+   - implementation("androidx.lifecycle:lifecycle-viewmodel-compose:latest_version")
 
 3. Chạy ứng dụng
-
 - Kết nối thiết bị Android hoặc dùng trình giả lập.
-
 - Nhấn Run trên Android Studio.
 
 # Giao diện
