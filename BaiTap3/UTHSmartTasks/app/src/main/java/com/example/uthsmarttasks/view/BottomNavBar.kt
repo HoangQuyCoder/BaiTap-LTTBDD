@@ -26,8 +26,12 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.vector.ImageVector
+import androidx.compose.ui.res.vectorResource
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
+import androidx.navigation.compose.currentBackStackEntryAsState
+import com.example.uthsmarttasks.R
 
 
 @Composable
@@ -35,21 +39,23 @@ fun BottomNavBar(
     navController: NavController
 //    onFabClick: () -> Unit
 ) {
-    val documentIcon = getDocumentIcon()
 
     val items = listOf(
         BottomNavItem.Home,
         BottomNavItem.Date,
-        BottomNavItem.createNewItem("document", "Document", documentIcon),
+        BottomNavItem.createNewItem("document", "Document", ImageVector.vectorResource(id = R.drawable.ic_document)),
         BottomNavItem.Setting,
     )
 
-    var selectedItem by remember { mutableIntStateOf(0) }
+    val navBackStackEntry by navController.currentBackStackEntryAsState()
+    val currentRoute = navBackStackEntry?.destination?.route
+
+    val selectedItem = items.indexOfFirst { it.route == currentRoute }.takeIf { it >= 0 } ?: 0
 
     Box(
         Modifier
             .fillMaxWidth()
-            .offset(y = (-16).dp)
+            .offset(y = (-8).dp)
             .padding(8.dp),
         contentAlignment = Alignment.BottomCenter,
 
@@ -78,8 +84,8 @@ fun BottomNavBar(
                     }
                     IconButton(
                         onClick = {
-//                            selectedItem = index
-//                            navController.navigate(item.route)
+                            selectedItem == index
+                            navController.navigate(item.route)
                         }
                     ) {
                         Icon(

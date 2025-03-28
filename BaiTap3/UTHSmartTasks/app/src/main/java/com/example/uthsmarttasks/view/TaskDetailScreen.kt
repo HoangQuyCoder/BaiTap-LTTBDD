@@ -77,14 +77,14 @@ fun TaskDetailScreen(
                 taskDetail.value.let { task ->
                     // Task Title
                     Text(
-                        text = task?.title.toString(),
+                        text = task?.title ?: "Dữ liệu đang cập nhật...",
                         fontSize = 20.sp,
                         fontWeight = FontWeight.Bold
                     )
 
                     // Task Description
                     Text(
-                        text = task?.description.toString(),
+                        text = task?.description ?: "Dữ liệu đang cập nhật...",
                         fontSize = 14.sp,
                         color = Color.Black
                     )
@@ -133,8 +133,7 @@ fun TaskDetailTopBar(navController: NavController) {
     Row(
         modifier = Modifier
             .fillMaxWidth()
-            .padding(18.dp)
-            .offset(y = 24.dp),
+            .padding(16.dp),
         horizontalArrangement = Arrangement.SpaceBetween,
         verticalAlignment = Alignment.CenterVertically
     ) {
@@ -202,9 +201,9 @@ fun TaskInfoSection(task: Task?) {
                 tint = Color.Black,
                 modifier = Modifier.size(28.dp)
             )
-            if (task != null) {
-                InfoCard(title = "Category", value = task.category)
-            }
+
+                InfoCard(title = "Category", value = task?.category ?: "")
+
         }
         Row(
             verticalAlignment = Alignment.CenterVertically,
@@ -215,9 +214,9 @@ fun TaskInfoSection(task: Task?) {
                 tint = Color.Black,
                 modifier = Modifier.size(28.dp)
             )
-            if (task != null) {
-                InfoCard(title = "Status", value = task.status)
-            }
+
+                InfoCard(title = "Status", value = task?.status ?: "")
+
         }
         Row(
             verticalAlignment = Alignment.CenterVertically,
@@ -228,12 +227,12 @@ fun TaskInfoSection(task: Task?) {
                 tint = Color.Black,
                 modifier = Modifier.size(28.dp)
             )
-            if (task != null) {
+
                 InfoCard(
                     title = "Priority",
-                    value = task.priority,
+                    value = task?.priority ?: "",
                 )
-            }
+
         }
     }
 }
@@ -244,8 +243,8 @@ fun InfoCard(title: String, value: String) {
         modifier = Modifier
             .padding(8.dp)
     ) {
-        Text(text = title, fontSize = 10.sp)
-        Text(text = value, fontSize = 10.sp, fontWeight = FontWeight.Bold)
+        Text(text = title, fontSize = 12.sp)
+        Text(text = value, fontSize = 12.sp, fontWeight = FontWeight.Bold)
     }
 }
 
@@ -288,7 +287,7 @@ fun AttachmentItem(attachment: Attachment) {
                 color = Color(0xFFE6E6E6),
                 shape = RoundedCornerShape(10.dp)
             )
-            .padding(10.dp)
+            .padding(16.dp)
             .fillMaxWidth()
             .clickable {
                 val intent = Intent(Intent.ACTION_VIEW, attachment.fileUrl.toUri())

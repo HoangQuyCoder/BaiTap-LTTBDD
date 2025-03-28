@@ -28,7 +28,7 @@ fun EmptyTaskScreen() {
     Box(
         modifier = Modifier
             .fillMaxWidth()
-            .padding(16.dp)
+            .padding(horizontal = 16.dp, vertical = 8.dp)
             .clip(RoundedCornerShape(12.dp))
             .background(Color(0xFFEAEAEA)), // Màu nền xám nhạt
         contentAlignment = Alignment.Center

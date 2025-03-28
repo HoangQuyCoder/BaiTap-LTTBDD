@@ -2,6 +2,7 @@ package com.example.uthsmarttasks.view
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -10,6 +11,7 @@ import androidx.compose.foundation.layout.offset
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.CircleShape
+import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Notifications
 import androidx.compose.material3.Icon
@@ -32,21 +34,28 @@ fun TopNavBar() {
         verticalAlignment = Alignment.CenterVertically,
         modifier = Modifier
             .fillMaxWidth()
-            .padding(18.dp)
-            .offset(y = 24.dp),
+            .padding(16.dp)
     ) {
-        // Logo bên trái
-        Image(
-            painter = painterResource(id = R.drawable.uth_logo),
-            contentDescription = "Logo",
+        Box(
             modifier = Modifier
-                .size(64.dp)
-                .padding(end = 12.dp)
-        )
+                .background(
+                    color = Color(0xFFD5EDFF),
+                    shape = RoundedCornerShape(10.dp)
+                )
+                .padding(8.dp),
+        ) {
+            // Logo bên trái
+            Image(
+                painter = painterResource(id = R.drawable.uth_logo),
+                contentDescription = "Logo",
+                modifier = Modifier
+                    .size(64.dp)
 
+            )
+        }
         // Tên ứng dụng và mô tả
         Column(
-            modifier = Modifier.weight(1f)
+            modifier = Modifier.weight(1f).padding(horizontal = 16.dp)
         ) {
             Text(
                 text = "SmartTasks",
@@ -84,4 +93,10 @@ fun TopNavBar() {
             )
         }
     }
+}
+
+@Preview(showBackground = true)
+@Composable
+fun PreviewTopNavBar(){
+    TopNavBar()
 }

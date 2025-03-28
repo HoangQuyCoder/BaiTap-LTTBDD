@@ -50,7 +50,7 @@ fun HomeScreen(viewModel: TaskViewModel = TaskViewModel(), navController: NavCon
                     LazyColumn(
                         modifier = Modifier
                             .fillMaxSize()
-                            .padding(16.dp)
+                            .padding(horizontal = 16.dp, vertical = 8.dp)
                     ) {
                         items(tasks) { task ->
                             TaskItem(task = task, onClick = {
