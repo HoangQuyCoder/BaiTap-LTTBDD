@@ -1,7 +1,6 @@
 # Ứng dụng UTH Smart Task
 
 - Chức năng
-
   - Khả năng điều hướng cơ bản giữa các màn hình
   - Thiết kế các màn hình hướng dẫn với các nút điều hướng, khả năng skip để đi đến trực tiếp màn hình chính
   - BottomNavBar giúp điều khiển giữa các màn hình khác nhau, FloatingActionButton hiển thị icon nổi lên
@@ -22,7 +21,8 @@
     - Các thẻ có thể được phân loại theo màu sắc hoặc biểu tượng để thể hiện mức độ ưu tiên (cao, trung bình, thấp).
   - LazyColumn giúp người dùng scroll một cách dễ dàng.
   - Thực hiện gọi API hiển thị trục tiếp, có màn hình error hiển thị khi API bị lỗi, cùng với call api get id hiển thị chi tiết các thành phần tương ứng.
-
+  - Đăng nhập bằng tài khoản google thực hiện trên FireBase
+    
 - Công nghệ sử dụng:
   - Jetback Compose
     - Sử dụng để xây dựng giao diện người dùng một cách nhanh chóng và hiệu quả.
@@ -39,9 +39,15 @@
   - Floating Action Button (FAB) làm nổi bật vị trí trên màn hình, giúp người dùng dễ dàng nhận diện và tương tác.
   - Lazycolumn khả năng scroll mạnh mẽ, tạo view vừa đủ để hiển thị, tối ưu hơn Column với khả năng hiển thị dữ liệu lớn.
   - Thư viện Retrofit cung cấp khả năng gọi API tiện lợi, dễ sử dụng
-
+  - FireBase một nền tảng phát triển wed và mobile vô cùng mạnh mẽ, cung cấp nhiều dịch vụ tiện tích, dễ dàng sử dụng.
+  - Đăng nhập bằng dùng google dựa vào Firebase Authentication
 # Giao diện
-<img width="200" alt="Screenshot_20250315_230245" src="https://github.com/user-attachments/assets/550a05cc-da34-4770-9ef2-defcc1015483" />
-<img width="200" alt="Screenshot_20250315_225856" src="https://github.com/user-attachments/assets/6cefaf85-9eb3-461a-b86f-4bd9472525ed" />
-<img width="200" alt="Screenshot_20250315_225909" src="https://github.com/user-attachments/assets/fe325f29-6d63-412f-9da8-ce33eeaf4c42" />
-<img width="200" alt="Screenshot_20250315_225919" src="https://github.com/user-attachments/assets/a9c03213-bb84-4d74-92fc-355b815437f4" />
+<img width="200" alt="welcome_screen" src="https://github.com/user-attachments/assets/550a05cc-da34-4770-9ef2-defcc1015483" />
+<img width="200" alt="first_intro" src="https://github.com/user-attachments/assets/6cefaf85-9eb3-461a-b86f-4bd9472525ed" />
+<img width="200" alt="second_intro" src="https://github.com/user-attachments/assets/fe325f29-6d63-412f-9da8-ce33eeaf4c42" />
+<img width="200" alt="thirds_intro" src="https://github.com/user-attachments/assets/a9c03213-bb84-4d74-92fc-355b815437f4" />
+<img width="200" alt="home_screen" src="https://github.com/user-attachments/assets/647888b7-b106-4ca3-95ac-edec852df46b" />
+<img width="200" alt="empty_screen" src="https://github.com/user-attachments/assets/24767492-3a61-488b-80af-babc56e68ba6" />
+<img width="200" alt="detail__screen" src="https://github.com/user-attachments/assets/7faff27d-e4a1-4aa9-be61-acb96787322b" />
+<img width="200" alt="dang_nhap" src="https://github.com/user-attachments/assets/a892af72-c18a-4e52-9908-843de90448bd" />
+<img width="200" alt="profile" src="https://github.com/user-attachments/assets/1e8f3770-d228-4ab3-bdd6-32f66213e076" />
