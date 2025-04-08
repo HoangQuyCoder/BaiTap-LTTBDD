@@ -117,8 +117,3 @@ fun TaskItem(task: Task, onClick: () -> Unit) {
     }
 }
 
-@Preview(showBackground = true)
-@Composable
-fun PreviewMainScreen() {
-    NavigationGraph()
-}

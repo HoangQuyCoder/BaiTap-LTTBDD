@@ -1,6 +1,7 @@
 package com.example.uthsmarttasks.view
 
 import android.app.Activity
+import android.widget.Toast
 import androidx.activity.compose.rememberLauncherForActivityResult
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.compose.foundation.Image
@@ -58,7 +59,7 @@ fun LoginScreen(navController: NavController) {
                     }
                 }
             } catch (e: Exception) {
-                println("Google Sign-In Failed: ${e.message}")
+                Toast.makeText(context, "Google Sign-In Failed: ${e.message}", Toast.LENGTH_SHORT).show()
             }
         }
 

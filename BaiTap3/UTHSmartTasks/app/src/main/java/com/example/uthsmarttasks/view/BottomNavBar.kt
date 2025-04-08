@@ -43,7 +43,7 @@ fun BottomNavBar(
     val items = listOf(
         BottomNavItem.Home,
         BottomNavItem.Date,
-        BottomNavItem.createNewItem("document", "Document", ImageVector.vectorResource(id = R.drawable.ic_document)),
+        BottomNavItem.Document,
         BottomNavItem.Setting,
     )
 

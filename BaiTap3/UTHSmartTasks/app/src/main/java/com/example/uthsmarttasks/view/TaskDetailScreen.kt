@@ -179,7 +179,6 @@ fun TaskDetailTopBar(navController: NavController) {
     }
 }
 
-
 @Composable
 fun TaskInfoSection(task: Task?) {
     Row(

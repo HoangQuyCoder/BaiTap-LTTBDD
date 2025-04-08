@@ -13,6 +13,13 @@ data class TaskResponse2(
     val data: Task
 )
 
+data class Task2(
+    val id: Int,
+    val title: String,
+    val description: String,
+    val color: ULong // Màu nền của mỗi mục, sử dụng Long để lưu giá trị màu
+)
+
 // Data Class for each task
 data class Task(
     val id: Int,
