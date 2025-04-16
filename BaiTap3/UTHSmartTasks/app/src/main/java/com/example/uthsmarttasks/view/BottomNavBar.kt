@@ -32,6 +32,7 @@ import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import androidx.navigation.compose.currentBackStackEntryAsState
 import com.example.uthsmarttasks.R
+import com.example.uthsmarttasks.model.BottomNavItem
 
 
 @Composable

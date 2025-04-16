@@ -153,6 +153,7 @@ fun LoginScreen(navController: NavController) {
                 color = Color(0xFF4A4646),
                 modifier = Modifier.padding(bottom = 16.dp)
             )
+            Spacer(modifier = Modifier.padding(6.dp))
         }
     }
 }

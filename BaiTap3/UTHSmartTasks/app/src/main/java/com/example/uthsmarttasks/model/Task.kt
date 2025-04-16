@@ -1,5 +1,19 @@
 package com.example.uthsmarttasks.model
 
+import androidx.room.Entity
+import androidx.room.PrimaryKey
+
+@Entity(tableName = "task_table")
+data class Task2(
+    @PrimaryKey(autoGenerate = true) val id: Int = 0,
+    val title: String,
+    val description: String,
+    val status: String,
+    val priority: String,
+    val category: String,
+    val dueDate: String,
+)
+
 // Data Class for the root of the JSON response
 data class TaskResponse(
     val isSuccess: Boolean,
@@ -11,13 +25,6 @@ data class TaskResponse2(
     val isSuccess: Boolean,
     val message: String,
     val data: Task
-)
-
-data class Task2(
-    val id: Int,
-    val title: String,
-    val description: String,
-    val color: ULong // Màu nền của mỗi mục, sử dụng Long để lưu giá trị màu
 )
 
 // Data Class for each task

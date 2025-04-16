@@ -240,9 +240,10 @@ fun TaskInfoSection(task: Task?) {
 fun InfoCard(title: String, value: String) {
     Column(
         modifier = Modifier
-            .padding(8.dp)
+            .padding(8.dp),
+        verticalArrangement = Arrangement.spacedBy(4.dp)
     ) {
-        Text(text = title, fontSize = 12.sp)
+        Text(text = title, fontSize = 14.sp)
         Text(text = value, fontSize = 12.sp, fontWeight = FontWeight.Bold)
     }
 }
@@ -307,11 +308,4 @@ fun AttachmentItem(attachment: Attachment) {
             color = Color.Black
         )
     }
-}
-
-
-@Preview(showBackground = true)
-@Composable
-fun PreviewMainScreen2() {
-    NavigationGraph()
 }

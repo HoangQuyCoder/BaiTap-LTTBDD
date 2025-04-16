@@ -5,6 +5,7 @@ plugins {
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
     id("com.google.gms.google-services")
+    id("com.google.devtools.ksp")
 }
 
 android {
@@ -43,10 +44,16 @@ android {
 }
 
 dependencies {
+    implementation("androidx.room:room-runtime:2.6.1")
+    implementation("androidx.room:room-ktx:2.6.1")
+    ksp("androidx.room:room-compiler:2.6.1")
+
     implementation("androidx.compose.material:material-icons-extended:1.5.0")
     implementation("androidx.compose.runtime:runtime-livedata:1.5.3")
-    implementation("io.coil-kt:coil-compose:2.2.2") // Thư viện Coil để tải ảnh
+
+    implementation("io.coil-kt:coil-compose:2.2.2")
     implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.6.2")
+
     implementation("com.squareup.retrofit2:retrofit:2.9.0")
     implementation("com.squareup.retrofit2:converter-gson:2.9.0")
 

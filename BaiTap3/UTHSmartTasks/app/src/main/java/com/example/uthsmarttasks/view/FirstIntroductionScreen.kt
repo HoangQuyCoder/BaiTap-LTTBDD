@@ -31,6 +31,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 import com.example.uthsmarttasks.R
+import com.example.uthsmarttasks.model.BottomNavItem
 import com.example.uthsmarttasks.ui.theme.PoppinsFont
 
 @Composable
