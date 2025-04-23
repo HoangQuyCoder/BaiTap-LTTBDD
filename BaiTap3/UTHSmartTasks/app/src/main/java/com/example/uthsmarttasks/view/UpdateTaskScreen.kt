@@ -1,7 +1,9 @@
 package com.example.uthsmarttasks.view
 
+import android.R.attr.category
+import android.R.attr.description
+import android.R.attr.priority
 import android.annotation.SuppressLint
-import android.app.DatePickerDialog
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
@@ -35,7 +37,6 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
@@ -46,7 +47,6 @@ import androidx.navigation.NavController
 import com.example.uthsmarttasks.R
 import com.example.uthsmarttasks.model.Task2
 import com.example.uthsmarttasks.viewmodel.TaskListViewModel
-import java.util.Calendar
 
 @SuppressLint("DefaultLocale")
 @Composable
@@ -62,34 +62,23 @@ fun UpdateTaskScreen(
     }
 
     task?.let { currentTask ->
-        var title by remember { mutableStateOf("") }
-        var description by remember { mutableStateOf("") }
-        var category by remember { mutableStateOf("") }
-        var status by remember { mutableStateOf("") }
-        var priority by remember { mutableStateOf("") }
-        var dueDate by remember { mutableStateOf("") }
-
-        LaunchedEffect(currentTask) {
-            title = currentTask.title
-            description = currentTask.description
-            category = currentTask.category
-            status = currentTask.status
-            priority = currentTask.priority
-            dueDate = currentTask.dueDate
-        }
+        val title = viewModel.taskTitle
+        val description = viewModel.taskDescription
+        val category = viewModel.taskCategory
+        val status = viewModel.taskStatus
+        val priority = viewModel.taskPriority
+        val dueDate = viewModel.taskDueDate
 
         val datePickerDialog = createDatePickerDialog { year, month, day ->
-            val newDate = "%02d/%02d/%04d".format(day, month + 1, year)
-            dueDate = newDate
             viewModel.updateDueDate(year, month, day)
         }
 
         Column(
             modifier = Modifier
                 .fillMaxSize()
-                .background(Color.White).verticalScroll(rememberScrollState())
-        )
-        {
+                .background(Color.White)
+                .verticalScroll(rememberScrollState())
+        ) {
             EditTaskTopBar(navController)
 
             Column(
@@ -98,50 +87,41 @@ fun UpdateTaskScreen(
                     .padding(horizontal = 16.dp),
                 verticalArrangement = Arrangement.spacedBy(8.dp)
             ) {
-                Column {
-                    Text("Task", fontSize = 16.sp, fontWeight = FontWeight.Bold)
-                    Spacer(modifier = Modifier.height(8.dp))
-                    OutlinedTextField(
-                        value = title,
-                        onValueChange = { title = it },
-                        modifier = Modifier.fillMaxWidth()
-                    )
-                }
+                TaskInputField(
+                    label = "Task",
+                    value = title,
+                    isError = viewModel.titleError,
+                    onValueChange = viewModel::onTitleChange
+                )
 
-                Column {
-                    Text("Description", fontSize = 16.sp, fontWeight = FontWeight.Bold)
-                    Spacer(modifier = Modifier.height(8.dp))
-                    OutlinedTextField(
-                        value = description,
-                        onValueChange = { description = it },
-                        modifier = Modifier.fillMaxWidth().height(120.dp),
-                        singleLine = false
-                    )
-                }
+                TaskInputField(
+                    label = "Description",
+                    value = description,
+                    isError = viewModel.descriptionError,
+                    modifier = Modifier.height(120.dp),
+                    onValueChange = viewModel::onDescriptionChange
+                )
 
                 TaskDropdown(
                     label = "Status",
                     options = listOf("Pending", "In Progress", "Done"),
-                    selected = status
-                ) {
-                    status = it
-                }
+                    selected = status,
+                    onSelected = viewModel::onStatusChange
+                )
 
                 TaskDropdown(
                     label = "Priority",
                     options = listOf("Low", "Medium", "High"),
-                    selected = priority
-                ) {
-                    priority = it
-                }
+                    selected = priority,
+                    onSelected = viewModel::onPriorityChange
+                )
 
                 TaskDropdown(
                     label = "Category",
                     options = listOf("Personal", "Work", "Study", "Others"),
-                    selected = category
-                ) {
-                    category = it
-                }
+                    selected = category,
+                    onSelected = viewModel::onCategoryChange
+                )
 
                 Column {
                     Text("Due Date", fontSize = 16.sp, fontWeight = FontWeight.Bold)
@@ -150,8 +130,7 @@ fun UpdateTaskScreen(
                         value = dueDate,
                         onValueChange = {},
                         readOnly = true,
-                        modifier = Modifier
-                            .fillMaxWidth(),
+                        modifier = Modifier.fillMaxWidth(),
                         trailingIcon = {
                             Icon(
                                 imageVector = Icons.Default.DateRange,
@@ -176,8 +155,9 @@ fun UpdateTaskScreen(
                             category = category,
                             dueDate = dueDate
                         )
-                        viewModel.updateTask(updatedTask)
-                        navController.popBackStack()
+                        viewModel.updateTask(updatedTask){
+                            navController.popBackStack()
+                        }
                     },
                     modifier = Modifier
                         .fillMaxWidth()
@@ -189,9 +169,9 @@ fun UpdateTaskScreen(
                 }
             }
         }
-
     }
 }
+
 
 @Composable
 fun EditTaskTopBar(navController: NavController) {

@@ -30,6 +30,7 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
@@ -56,6 +57,10 @@ import java.util.Locale
 
 @Composable
 fun AddTaskScreen(navController: NavController, viewModel: TaskListViewModel) {
+    LaunchedEffect(Unit) {
+        viewModel.resetTaskForm()
+    }
+
     val datePickerDialog = createDatePickerDialog { year, month, day ->
         viewModel.updateDueDate(year, month, day)
     }
@@ -75,47 +80,40 @@ fun AddTaskScreen(navController: NavController, viewModel: TaskListViewModel) {
             verticalArrangement = Arrangement.spacedBy(8.dp)
         ) {
             TaskInputField(
-                "Task",
-                viewModel.taskTitle,
-                viewModel.titleError
-            ) {
-                viewModel.taskTitle = it
-                viewModel.titleError = viewModel.taskTitle.isBlank()
-            }
+                label = "Task",
+                value = viewModel.taskTitle,
+                isError = viewModel.titleError,
+                onValueChange = viewModel::onTitleChange
+            )
 
             TaskInputField(
-                "Description",
-                viewModel.taskDescription,
-                viewModel.descriptionError,
-                modifier = Modifier.height(120.dp)
-            ) {
-                viewModel.taskDescription = it
-                viewModel.descriptionError = viewModel.taskDescription.isBlank()
-            }
+                label = "Description",
+                value = viewModel.taskDescription,
+                isError = viewModel.descriptionError,
+                modifier = Modifier.height(120.dp),
+                onValueChange = viewModel::onDescriptionChange
+            )
 
             TaskDropdown(
                 label = "Status",
                 options = listOf("Pending", "In Progress", "Done"),
-                selected = viewModel.taskStatus
-            ) {
-                viewModel.taskStatus = it
-            }
+                selected = viewModel.taskStatus,
+                onSelected = viewModel::onStatusChange
+            )
 
             TaskDropdown(
                 label = "Priority",
                 options = listOf("Low", "Medium", "High"),
-                selected = viewModel.taskPriority
-            ) {
-                viewModel.taskPriority = it
-            }
+                selected = viewModel.taskPriority,
+                onSelected = viewModel::onPriorityChange
+            )
 
             TaskDropdown(
                 label = "Category",
                 options = listOf("Personal", "Work", "Study", "Others"),
-                selected = viewModel.taskCategory
-            ) {
-                viewModel.taskCategory = it
-            }
+                selected = viewModel.taskCategory,
+                onSelected = viewModel::onCategoryChange
+            )
 
             Column {
                 Text("Due Date", fontSize = 16.sp, fontWeight = FontWeight.Bold)
@@ -124,8 +122,7 @@ fun AddTaskScreen(navController: NavController, viewModel: TaskListViewModel) {
                     value = viewModel.taskDueDate,
                     onValueChange = {},
                     readOnly = true,
-                    modifier = Modifier
-                        .fillMaxWidth(),
+                    modifier = Modifier.fillMaxWidth(),
                     trailingIcon = {
                         Icon(
                             imageVector = Icons.Default.DateRange,
@@ -218,7 +215,7 @@ fun TaskDropdown(
     label: String,
     options: List<String>,
     selected: String,
-    onSelect: (String) -> Unit
+    onSelected: (String) -> Unit
 ) {
     var expanded by remember { mutableStateOf(false) }
 
@@ -242,7 +239,7 @@ fun TaskDropdown(
                     DropdownMenuItem(
                         text = { Text(option) },
                         onClick = {
-                            onSelect(option)
+                            onSelected(option)
                             expanded = false
                         }
                     )

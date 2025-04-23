@@ -27,6 +27,7 @@ import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
@@ -44,9 +45,13 @@ import com.example.uthsmarttasks.model.Task2
 import com.example.uthsmarttasks.viewmodel.TaskListViewModel
 
 @Composable
-fun DocumentScreen(navController: NavController, viewModel: TaskListViewModel) {
+fun DocumentScreen(navController: NavController, viewModel: TaskListViewModel){
     val searchQuery by viewModel.searchQuery.collectAsState()
     val searchResults by viewModel.searchResults.collectAsState()
+
+//    LaunchedEffect(Unit) {
+//        viewModel.syncFromFirestore()
+//    }
 
     Scaffold(
         topBar = {
@@ -131,8 +136,6 @@ fun TaskItem(navController: NavController, task: Task2, onClick: () -> Unit) {
                         .padding(8.dp)
                 )
             }
-
-
         }
         Row(
             modifier = Modifier

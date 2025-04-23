@@ -1,18 +1,22 @@
 package com.example.uthsmarttasks.model
 
+import androidx.annotation.Keep
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 
+@Keep
 @Entity(tableName = "task_table")
 data class Task2(
-    @PrimaryKey(autoGenerate = true) val id: Int = 0,
-    val title: String,
-    val description: String,
-    val status: String,
-    val priority: String,
-    val category: String,
-    val dueDate: String,
+    @PrimaryKey(autoGenerate = true)
+    var id: Int = 0,
+    var title: String = "",
+    var description: String = "",
+    var status: String = "",
+    var category: String = "",
+    var priority: String = "",
+    var dueDate: String = "",
 )
+
 
 // Data Class for the root of the JSON response
 data class TaskResponse(
