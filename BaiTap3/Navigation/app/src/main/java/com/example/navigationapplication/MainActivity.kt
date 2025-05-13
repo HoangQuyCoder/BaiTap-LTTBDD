@@ -17,7 +17,9 @@ import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.offset
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.Card
@@ -29,6 +31,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.SpanStyle
 import androidx.compose.ui.text.TextStyle
@@ -49,7 +52,7 @@ import androidx.navigation.compose.rememberNavController
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
+//        enableEdgeToEdge()
         setContent {
             Controller()
         }
@@ -75,8 +78,7 @@ fun DetailScreen(title: String, navController: NavController) {
     Box(
         modifier = Modifier
             .fillMaxSize()
-            .background(Color.White)
-            .padding(top = 48.dp)
+            .background(Color.White).padding(vertical = 8.dp)
     ) {
         Text(
             text = "$title Detail",
@@ -181,7 +183,7 @@ fun UIComponentsScreen(navController: NavController) {
     Column(
         modifier = Modifier
             .fillMaxSize()
-            .background(Color.White)
+            .background(Color.White).verticalScroll(rememberScrollState()).padding(vertical = 8.dp)
     ) {
         Text(
             text = "UI Components List",
@@ -190,7 +192,6 @@ fun UIComponentsScreen(navController: NavController) {
             color = Color(0xFF2196F3),
             modifier = Modifier
                 .align(Alignment.CenterHorizontally)
-                .padding(top = 48.dp, bottom = 8.dp)
         )
 
         ComponentSection(
@@ -236,8 +237,6 @@ fun ComponentSection(
             }
         }
     }
-
-
 }
 
 @Composable
@@ -247,7 +246,7 @@ fun ComponentCard(title: String, description: String, onClick: () -> Unit) {
         colors = CardDefaults.cardColors(containerColor = Color(0xFFD0E8FF)),
         modifier = Modifier
             .fillMaxWidth()
-            .padding(top = 8.dp, bottom = 8.dp)
+            .padding(vertical = 8.dp)
             .clickable { onClick() }
     ) {
         Column(modifier = Modifier.padding(16.dp)) {
@@ -272,26 +271,24 @@ fun WelcomeScreen(navController: NavController) {
             painter = painterResource(id = R.drawable.jetpack_compose_logo),
             contentDescription = "Jetpack Compose Logo",
             modifier = Modifier
-                .size(216.dp, 233.dp)
+                .size(216.dp, 233.dp),
+            contentScale = ContentScale.Crop
         )
 
         Column(
             horizontalAlignment = Alignment.CenterHorizontally,
-            modifier = Modifier.offset(y = (-20).dp)
+            modifier = Modifier.fillMaxWidth()
         ) {
             Text(
                 text = "Jetpack Compose",
                 style = TextStyle(
                     fontWeight = FontWeight(500),
                     fontSize = 16.sp,
-                    lineHeight = 22.4.sp
+                    lineHeight = 22.sp
                 ),
-
-                color = Color.Black,
-                modifier = Modifier.size(148.dp, 22.dp)
             )
 
-            Spacer(modifier = Modifier.height(24.dp))
+            Spacer(modifier = Modifier.height(12.dp))
 
             Text(
                 text = "Jetpack Compose is a modern UI toolkit for " +
@@ -306,7 +303,6 @@ fun WelcomeScreen(navController: NavController) {
                 ),
                 modifier = Modifier
                     .size(300.dp, 60.dp)
-
             )
         }
 
@@ -318,7 +314,6 @@ fun WelcomeScreen(navController: NavController) {
             ),
             modifier = Modifier
                 .size(315.dp, 53.dp)
-
         ) {
             Text(
                 text = "I'm ready",
