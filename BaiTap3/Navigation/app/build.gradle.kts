@@ -1,3 +1,5 @@
+import org.gradle.kotlin.dsl.implementation
+
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
@@ -40,7 +42,7 @@ android {
 }
 
 dependencies {
-    implementation(libs.androidx.navigation.compose)
+    implementation("androidx.navigation:navigation-compose:2.9.0")
     implementation(libs.ui)
     implementation(libs.androidx.foundation)
     implementation(libs.androidx.core.ktx)
